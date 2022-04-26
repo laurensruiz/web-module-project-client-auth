@@ -14,7 +14,7 @@ In this project, you will connect to a local server with endpoints allowing you 
 
 The included API holds a list of friends and lets you add, edit, or remove friends from that list. All of the API endpoints (except the login endpoint) are considered "protected", meaning you have to make the request with an authentication token in the header or the API will send back a `401` error. Take a look at the endpoints that our API has to offer in `http://localhost:9000`.
 
-- **[POST]** * to `/api/login`: returns a token to be added to the header of all other requests. Pass in the following credentials as the `body` of the request: `{ username: 'Bloom', password: 'Tech' }`
+- **[POST]** * to `B`: returns a token to be added to the header of all other requests. Pass in the following credentials as the `body` of the request: `{ username: 'Bloom', password: 'Tech' }`
 - **[POST]** * to `/api/logout`: removes a token from active use. Returns the inactive token.
 - **[GET]** to `/api/friends`: returns the list of friends.
 - **[GET]** to `/api/friends/123`: returns the friend with the id passed as part of the URL (123 in example).
