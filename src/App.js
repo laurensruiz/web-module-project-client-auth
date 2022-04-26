@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
 
 const Login = () => {
   return (<h2>Login</h2>)
@@ -22,7 +22,7 @@ function App() {
           <Login/>
         </Route>
         <Route exact path="/login">
-          <Login/>
+          <Redirect to ="/" />
         </Route>
         <Route exact path="/friends">
           <FriendsList />
